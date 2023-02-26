@@ -105,7 +105,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               chatProvider: chatProvider);
                         },
                         decoration: const InputDecoration.collapsed(
-                            hintText: "How can I help you",
+                            hintText: "How can I help you?",
                             hintStyle: TextStyle(color: Colors.grey)),
                       ),
                     ),
