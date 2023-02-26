@@ -3,6 +3,7 @@
 *.log
 *.pyc
 *.swp
+*.env
 .DS_Store
 .atom/
 .buildlog/
@@ -10,8 +11,7 @@
 .svn/
 migrate_working_dir/
 
-# API Key
-/lib/constants/api_consts.dart
+
 
 # IntelliJ related
 *.iml

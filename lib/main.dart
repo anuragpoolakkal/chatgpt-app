@@ -1,12 +1,13 @@
 import 'package:chatgpt/providers/models_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'constants/constants.dart';
 import 'providers/chats_provider.dart';
 import 'screens/chat_screen.dart';
 
-void main() {
+Future main() async {
+  await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
 

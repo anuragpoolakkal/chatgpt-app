@@ -1,11 +1,13 @@
 import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
-
 import 'package:chatgpt/constants/api_consts.dart';
 import 'package:chatgpt/models/chat_model.dart';
 import 'package:chatgpt/models/models_model.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
+
+String? API_KEY = dotenv.env['API_KEY'];
 
 class ApiService {
   static Future<List<ModelsModel>> getModels() async {
